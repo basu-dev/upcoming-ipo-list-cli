@@ -53,7 +53,7 @@ async function getData() {
   infos = Array.from(infos).map((d) => d.innerHTML);
   if (infos.length == 0) {
     console.log(
-      `${COLOR.fgRed}No Any IPO List found.${COLOR.reset} \n\nVisit ${COLOR.fgGreen} ${IPOLIST_URL} ${COLOR.fgGreen} for more info.\n`
+      `${COLOR.fgRed}No Any IPO List found.${COLOR.reset} \n\nVisit ${COLOR.fgGreen} ${IPOLIST_URL} ${COLOR.reset} for more info.\n`
     );
     return;
   }
@@ -75,7 +75,7 @@ async function getData() {
   });
   console.table(infos);
   console.log(
-    `\n\nVisit ${COLOR.fgGreen} ${IPOLIST_URL} ${COLOR.fgGreen} for more info.\n`
+    `\n\nVisit ${COLOR.fgGreen} ${IPOLIST_URL} ${COLOR.reset} for more info.\n`
   );
 
   return infos;
